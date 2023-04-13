@@ -6,7 +6,7 @@
 /*   By: arlamber <arlamber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/08 12:20:28 by arlamber          #+#    #+#             */
-/*   Updated: 2022/11/27 16:15:27 by arlamber         ###   ########.fr       */
+/*   Updated: 2022/12/01 15:42:30 by arlamber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,8 @@ char	*ft_strdup(const char *s)
 {
 	char	*dest;
 	int		i;
-
+	if (!s)
+		reurn (NULL)
 	i = 0;
 	while (s[i])
 		i++;
